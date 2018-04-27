@@ -1,0 +1,53 @@
+@mixin randomStyle($width, $height, $background) {
+    width: $width;
+    height: $height;
+    background: $background;
+}
+
+*{margin:0;padding: 0;list-style: none;}
+.style10 {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    font-size: 12px;
+    font-weight: bold;
+    margin:40px 20px;
+}
+
+.style1 {
+    @include randomStyle(100%, 900px, #f00)
+}
+.style2 {
+    @include randomStyle(100%, 1000px, #0f0)
+}
+.style3 {
+    @include randomStyle(100%, 1100px, #00f)
+}
+.style4 {
+    @include randomStyle(100%, 1000px, #ff0)
+}
+.style5 {
+    @include randomStyle(100%, 900px, #0ff)
+}
+
+.myswipper-box {
+    position: relative;
+    overflow: hidden;
+    .myswipper-item {
+        position: absolute;
+        text-align: center;
+        top: 0;
+        &:not(:first-child) {
+            transform: translate(calc(100%),0)  
+        }
+
+    }
+}
+
+.myswipper-tag{
+    &.myswipper-tag-active {
+        color: #f00;
+        font-size: 16px;
+    }
+}
