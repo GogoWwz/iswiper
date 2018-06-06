@@ -10,6 +10,7 @@ function resolve(dir) {
 // 页面目录文件字典
 const entryJson = require("../config/entry.json")
 
+console.log(entryJson)
 // 多页面配置输出目录
 let HtmlPlugins = entryJson.map(page => {
     return new HtmlWebpackPlugin({
@@ -17,6 +18,7 @@ let HtmlPlugins = entryJson.map(page => {
         filename: resolve(`/dist/${page.url}.html`),
         template: resolve(`src/views/${page.url}/index.html`),
         inject: true,
+        // chunks: [page.url,"base"],
         minify: {
             caseSensitive: false,
             collapseBooleanAttributes: true, 
@@ -31,7 +33,7 @@ let entry = {
 }
 
 entryJson.map(page => {
-    entry[page.url] = path.resolve(__dirname,`../src/views/${page.url}/iswipper.js`)
+    entry[page.url] = path.resolve(__dirname,`../src/views/${page.url}/index.js`)
 })
 
 module.exports = {

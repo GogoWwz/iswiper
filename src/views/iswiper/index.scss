@@ -16,24 +16,25 @@
 }
 
 .style1 {
-    @include randomStyle(100%, 900px, #f00)
+    @include randomStyle(100%, 100px, #f00)
 }
 .style2 {
-    @include randomStyle(100%, 1000px, #0f0)
+    @include randomStyle(100%, 200px, #0f0)
 }
 .style3 {
-    @include randomStyle(100%, 1100px, #00f)
+    @include randomStyle(100%, 800px, #00f)
 }
 .style4 {
-    @include randomStyle(100%, 1000px, #ff0)
+    @include randomStyle(100%, 200px, #ff0)
 }
 .style5 {
-    @include randomStyle(100%, 900px, #0ff)
+    @include randomStyle(100%, 100px, #0ff)
 }
 
 .myswipper-box {
     position: relative;
     overflow: hidden;
+    transition: all .3s ease;
     .myswipper-item {
         position: absolute;
         text-align: center;
@@ -44,7 +45,9 @@
 
     }
 }
-
+.myswipper-animate {
+    transition: all .3s ease;
+}
 .myswipper-tag{
     &.myswipper-tag-active {
         color: #f00;
