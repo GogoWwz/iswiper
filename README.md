@@ -15,31 +15,9 @@
 - dist/js/中的iswiper.js
 - dist/css/中的css
 
-### 页面格式
+### 调用
 
-- 参考dist/index.html   
-```
-<ul class="myswi# iswiper
-
-## 项目介绍
-
-* 移动端横向标签滑动效果
-    
-* 依赖zepto
-   
-* 解决了不需要动态加载时，模块高度不同导致页面高度变化的问题
-	
-## 项目使用
-
-### 引入说明
-
-- dist/js/中的iswiper.js
-- dist/css/中的css
-
-### 页面格式
-
-- 页面相关  
-
+- 页面相关
 ```
 <ul class="myswipper-box">
     <li class="myswipper-item style1">1</li>
@@ -48,10 +26,9 @@
     <li class="myswipper-item style4">4</li>
     <li class="myswipper-item style5">5</li>
 </ul>
-
 ```
-- js相关
 
+- js相关
 ```
 const sw = new Swipper({
     touchStart: function(e) {
@@ -68,7 +45,6 @@ const sw = new Swipper({
     }
 })
 sw.init()
-
 ```
 
 
@@ -82,10 +58,4 @@ sw.init()
 ## TODO
 
 - 除去zepto依赖
-- 提供api接口pper-box">
-
-## 回调函数
-
-* touchStart: 触摸时回调   
-* touchMove: 滑动时回调    
-* touchEnd: 滑动结束时回调
+- 提供api接口
