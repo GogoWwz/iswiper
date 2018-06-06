@@ -1,4 +1,4 @@
-#iswiper
+# iswiper
 
 ## 项目介绍
 
@@ -9,6 +9,9 @@
 * 解决了不需要动态加载时，模块高度不同导致页面高度变化的问题
 	
 ## 项目使用
+
+## 效果预览
+![image](https://github.com/GogoWwz/iswiper/static/preview.gif)
 
 ### 引入说明
 
