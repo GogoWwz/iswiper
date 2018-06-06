@@ -11,7 +11,7 @@
 ## 项目使用
 
 ## 效果预览
-![image](https://github.com/GogoWwz/iswiper/static/preview.gif)
+![image](https://github.com/GogoWwz/iswiper/blob/master/static/preview.gif)
 
 ### 引入说明
 
