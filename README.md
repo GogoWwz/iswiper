@@ -38,7 +38,8 @@
 
 ### 页面格式
 
-- 页面相关   
+- 页面相关  
+
 ```
 <ul class="myswipper-box">
     <li class="myswipper-item style1">1</li>
@@ -47,8 +48,10 @@
     <li class="myswipper-item style4">4</li>
     <li class="myswipper-item style5">5</li>
 </ul>
+
 ```
 - js相关
+
 ```
 const sw = new Swipper({
     touchStart: function(e) {
@@ -65,6 +68,7 @@ const sw = new Swipper({
     }
 })
 sw.init()
+
 ```
 
 
@@ -79,14 +83,6 @@ sw.init()
 
 - 除去zepto依赖
 - 提供api接口pper-box">
-    <li class="myswipper-item style1">1</li>
-    <li class="myswipper-item style2">2</li>
-    <li class="myswipper-item style3">3</li>
-    <li class="myswipper-item style4">4</li>
-    <li class="myswipper-item style5">5</li>
-</ul>
-```
-
 
 ## 回调函数
 
